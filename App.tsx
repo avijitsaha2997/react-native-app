@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const FlatListBasics = () => {
+const App = () => {
   return (
     <View style={styles.container}>
       {/* <FlatList
@@ -61,6 +61,7 @@ const FlatListBasics = () => {
           data: [
             'Kenny',
             'kane',
+            'kartos',
           ],
         },
       ]}
@@ -73,4 +74,4 @@ const FlatListBasics = () => {
   );
 };
 
-export default FlatListBasics;
+export default App;
