@@ -31,8 +31,11 @@ const FlatListBasics = () => {
       <Text>This is my new app.</Text>
       <Text>This is my new app.</Text>
       <Text>This is my new app.</Text>
+      <Text>This is my new app.</Text>
+      <Text>This is my new app.</Text>
     </View>
   );
 };
 
 export default FlatListBasics;
+
