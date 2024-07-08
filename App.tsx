@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
-import {FlatList, SectionList, StyleSheet, Text, View} from 'react-native';
+import {FlatList, SectionList, StyleSheet, Text, View, useColorScheme} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -22,54 +22,20 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     backgroundColor: 'rgba(247,247,247,1.0)',
   },
+  darkText:{
+    color: 'black',
+  },
+  whiteText:{
+    color: 'red',
+  }
 });
 
 const App = () => {
+  const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.container}>
-      {/* <FlatList
-        data={[
-          {key: 'Devin'},
-          {key: 'Dany'},
-          {key: 'Dominic'},
-          {key: 'Jackson'},
-          {key: 'James'},
-          {key: 'Joel'},
-          {key: 'John'},
-          {key: 'Jillian'},
-          {key: 'Jimmy'},
-          {key: 'Julie'},
-        ]}
-        renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
-      /> */}
-      <SectionList sections={[
-        {title: 'D', data: ['Devin', 'Dany', 'Dominic']},
-        {
-          title: 'J',
-          data: [
-            'Jackson',
-            'James',
-            'Jillian',
-            'Jimmy',
-            'Joel',
-            'John',
-            'Julie',
-          ],
-        },
-        {
-          title: 'k',
-          data: [
-            'Kenny',
-            'kane',
-            'kartos',
-          ],
-        },
-      ]}
-      renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
-      renderSectionHeader={({section}) => (
-        <Text style={styles.sectionHeader}>{section.title}</Text>
-      )}
-      />
+      {/* <Text style={isDarkMode ? styles.darkText : styles.whiteText}>Hello Avijit!</Text> */}
+      <Text>hello</Text>
     </View>
   );
 };

@@ -28,6 +28,7 @@ const FlatListBasics = () => {
   return (
     <View style={styles.container}>
       <Text>This is my new app.</Text>
+      <Text>This is my new app.</Text>
     </View>
   );
 };
